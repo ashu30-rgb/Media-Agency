@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-08-free-img.jpg);
+}
+#about{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-14-free-img.jpg);
+}
+#services{
+    background-image: url(	https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-13-free-img.jpg);
+}
+#portfolio{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-16-free-img.jpg);
+
+}
+#contact{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-07-free-img.jpg);
+}
+.service-btm-bg-girl{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-01-free-img.jpg);
+    min-height: 75vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-middle-bg{
+    background-image: url(	https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-15-free-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.agency-bg{
+    background-image: url(https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/bg-overlay-01-free-img.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    opacity: .05;
+    transition: all .3s,border-radius .3s,opacity .3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.head-top{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top-overlay{
+    @apply absolute top-0 left-0 h-full w-full;
+    background-color: transparent;
+    background-image: linear-gradient(180deg,#0000004D 50%,#000000cc 100%);
+    opacity: 1;
+    transition: all .3s,border-radius .3s,opacity .3s;
+}
+
+.home-play:before{
+    content:"\f04b";
+    fill: red;
+    height: 24px;
+    width: 24px;
+}
+
+.blend{
+    mix-blend-mode: exclusion;
+}
+
+.portfolio-card-overlay{
+    @apply bg-black opacity-50 absolute top-0 left-0 w-full h-full transition-all duration-700;
+}
+.portfolio-card-overlay:hover{
+    @apply  opacity-70 transition-all duration-700; 
+}
+  
+  .tech-stack::after {
+    content: '';
+    position: absolute; 
+    top: 0px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    height: 1px; 
+    background-color: #7A7A7A;
+  }
+  .tech-stack::before {
+    content: ''; 
+    position: absolute;
+    left: 0px;
+    top: 50%; 
+    transform: translateY(-50%);
+    height: 60%;
+    width: 1px; 
+    background-color: #7A7A7A;
+  }
+
+  input,textarea:focus{
+    outline: none;
+    border: none;
+  }
