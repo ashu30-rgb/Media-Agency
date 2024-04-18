@@ -7,9 +7,9 @@ const location = useLocation()
   return (
     <header className="text-gray-600 body-font !w-screen max-w-full overflow-x-hidden">
     <div className="container mx-auto flex flex-wrap p-5 md:px-7 flex-col md:flex-row items-center">
-      <a href='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <Link to='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
         <img width="218" height="56" src="https://websitedemos.net/media-agency-04/wp-content/uploads/sites/599/2020/06/logo-retina-free-img.png" alt="logo" />
-      </a>
+      </Link>
       <nav className="md:ml-auto flex flex-wrap items-center text-sm md:text-lg text-white justify-center">
         <Link to="/" className={`mr-4 md:mr-7 lg:hover:scale-105 shadow-sm ${location.pathname==="/"?"font-semibold":""}`}>Home</Link>
         <Link to="/about" className={`mr-4 md:mr-7 lg:hover:scale-105 ${location.pathname==="/about"?"font-semibold":""}`}>About</Link>
